@@ -1,4 +1,5 @@
 var documentTime = document.getElementById('time');
+var documentSecond = document.getElementById('seconds');
 var documentDay = document.getElementById('day');
 var documentMonth = document.getElementById('month');
 var fondo = document.getElementById('dynamic-background');
@@ -11,6 +12,9 @@ setInterval(() =>{
 
     var hora = hoy.getHours();
     var minuto = hoy.getMinutes();
+    var segundo = hoy.getSeconds();
+
+    console.log(segundo);
 
     var dia = hoy.getDate();
     var diaSemana = hoy.getDay();
@@ -26,6 +30,12 @@ setInterval(() =>{
 
     } else{
         documentTime.innerHTML = hora + ':' + minuto;
+    }
+
+    if(segundo < 10){
+        documentSecond.innerHTML =  ': 0' + segundo;
+    } else {
+        documentSecond.innerHTML =  ': ' + segundo;
     }
     
     setFondo(hora);
