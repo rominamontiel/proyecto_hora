@@ -191,6 +191,11 @@ section .localization span {
         padding: 8vw;
     }
 
+    section .menu .menu-btn,
+    section .menu .content .btn-active {
+        cursor: default;
+    }
+
     section .localization{
         top: 1rem;
         right: 1rem;
