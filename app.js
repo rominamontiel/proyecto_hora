@@ -14,8 +14,6 @@ setInterval(() =>{
     var minuto = hoy.getMinutes();
     var segundo = hoy.getSeconds();
 
-    console.log(segundo);
-
     var dia = hoy.getDate();
     var diaSemana = hoy.getDay();
 
