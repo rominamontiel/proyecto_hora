@@ -7,6 +7,10 @@
     color: #FFF;
 }
 
+.hide{
+    display: none !important;
+}
+
 body {
     background: #000;
     height: 100vh;
@@ -24,6 +28,81 @@ section {
     display: flex;
     align-items: flex-end;
     position: relative;
+}
+
+section .menu{
+    position: absolute;
+    top: 1rem;
+    left: 0rem;
+    padding-left: .5rem;
+}
+
+section .menu .menu-btn{
+    width: 1.5rem;
+    height: 1.4rem;
+    margin: 0;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+}
+
+section .menu .menu-btn > div,
+section .menu .menu-btn > div::before,
+section .menu .menu-btn > div::after{
+    width: 4px;
+    height: 4px;
+    background: #FFF;
+    border-radius: 50%;
+    position: relative;
+    opacity: .9;
+}
+
+section .menu .menu-btn > div::before, 
+section .menu .menu-btn > div::after{
+    content: '';
+    position: absolute;
+}
+
+section .menu .menu-btn > div::before{
+    top: .5rem;
+}
+section .menu .menu-btn > div::after{
+    top: 1rem;
+}
+
+
+section .menu .content{
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+    margin: 1.2rem 0 0 .5rem;
+    border-radius: 5px;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+}
+
+section .menu .content span{
+    font-size: .8rem;
+    user-select: none;
+}
+
+section .menu .content .btn-active{
+    background: rgba(255, 255, 255, 0.5);
+    width: 3rem;
+    height: 1.5rem;
+    border-radius: 1rem;
+    padding: 2px 3px;
+    margin-left: .5rem;
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+    /* background: #56af6d; */
+}
+section .menu .content .btn-active .circle{
+    width: calc(1.5rem - 4px);
+    height: calc(1.5rem - 4px);
+    background: #FFF;
+    border-radius: 50%;
+    transition: all .3s ease-in-out;
+    /* transform: translateX(22px); */
 }
 
 section .localization {
@@ -112,8 +191,8 @@ section .localization span {
     }
 
     section .localization{
-        top: 5vh;
-        right: 5vh;
+        top: 1rem;
+        right: 1rem;
     }
 
     .data-container h2.time{

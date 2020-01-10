@@ -10,6 +10,17 @@
 </head>
 <body>
     <section id="dynamic-background">
+        <div class="menu">
+            <div class="menu-btn" id="btn-menu">
+                <div></div>
+            </div>
+            <div class="content hide" id="content-menu">
+                <span>Ver segundos</span>
+                <div class="btn-active" id="botoncito">
+                    <div class="circle" id="circulo"></div>
+                </div>
+            </div>
+        </div>
         <div class="localization">
             <img src="img/ubi.svg" alt="">
             <span>Buenos Aires, Argentina</span>
@@ -18,7 +29,7 @@
         <div class="data-container">
             <div class="time-box">
                 <h2 class="time" id="time">23:59</h2>
-                <span class="seconds" id="seconds">:12</span>
+                <span class="seconds hide" id="seconds">:12</span>
             </div>
             <h2 class="day" id="day">Miércoles 10</h2>
             <h2 class="month" id="month">Enero, 2020</h2>
@@ -26,5 +37,6 @@
     </section>
 
     <script src="app.js"></script>
+    <script src="menu.js"></script>
 </body>
 </html>

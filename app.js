@@ -1,8 +1,8 @@
-var documentTime = document.getElementById('time');
-var documentSecond = document.getElementById('seconds');
-var documentDay = document.getElementById('day');
-var documentMonth = document.getElementById('month');
-var fondo = document.getElementById('dynamic-background');
+const documentTime = document.getElementById('time');
+const documentSecond = document.getElementById('seconds');
+const documentDay = document.getElementById('day');
+const documentMonth = document.getElementById('month');
+const fondo = document.getElementById('dynamic-background');
 
 var arraySemana = ['Domingo','Lunes','Martes','Miércoles','Jueves','Viernes','Sábado'];
 var arrayMes =  ['Enero','Febrero','Marzo','Abril','Mayo','Junio','Julio','Agosto','Septiembre','Octubre','Noviembre','Diciembre'];
